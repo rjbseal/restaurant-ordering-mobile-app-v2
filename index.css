@@ -1,1 +1,83 @@
 @import url('https://fonts.googleapis.com/css2?family=Smythe&display=swap');
+
+body {
+    font-family: 'Smythe', sans-serif;
+}
+
+#container {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background: url('/header.png') center/cover no-repeat;
+    min-height: 163px;
+}
+
+#content-wrapper {
+    padding: 0 20px;
+}
+
+#menu {
+    margin-top: 40px;
+}
+
+#menu-list,
+#order-list {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-item,
+.left-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.menu-item {
+    justify-content: space-between;
+    padding: 30px 0;
+    border-bottom: 1px solid #D2D2D2;
+}
+
+.item-emoji {
+    font-size: 75px;
+}
+
+.item-name,
+.item-ingredients,
+.item-price {
+    padding: 0;
+    margin: 0;
+}
+
+.item-name {
+    font-size: 28px;
+    letter-spacing: 1.4px;
+}
+
+.item-ingredients {
+    color: #8B8B8B;
+    padding: 0 5px 10px 0
+}
+
+.add-item-btn {
+    background-color: #fff;
+    border: 1px solid #DEDEDE;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    color: #3C3C3C;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.add-item-btn:hover {
+    border: 1px solid #1f1f1f;
+    color: #1f1f1f;
+}
+
+/* UTILITY */
