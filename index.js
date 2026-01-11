@@ -2,11 +2,11 @@ import { menuArray } from '/data.js'
 
 /* LISTENERS */
 /* GENERATE */
-function generateListItemsHtml(menuItems) {
+function buildMenuListItemsHtml(menuItems) {
     return menuItems.map(item => {
         const { name, ingredients, emoji, price } = item;
         return ` 
-            <li class="menu-item">
+            <li class="menu-item-row split-row">
                 <div class="left-group">
                     <span class="item-emoji">${emoji}</span>
                     <div class="menu-item-info">
@@ -21,18 +21,11 @@ function generateListItemsHtml(menuItems) {
     }).join(' ')
 }
 /* RENDER */
-// coupled version
-/*function renderMenuHtml() {
-    document.getElementById('menu-list').innerHTML = generateListItemsHtml(menuArray)
-}*/
 
-// decoupled version
 function renderMenu(menuItems) {
-    const html = generateListItemsHtml(menuItems)
+    const html = buildMenuListItemsHtml(menuItems)
     document.getElementById('menu-list').innerHTML = html
 }
-
-
 
 /* INIT */
 renderMenu(menuArray)

@@ -24,20 +24,19 @@ header {
 }
 
 #menu-list,
-#order-list {
+#orders-list {
     list-style: none;
     padding: 0;
 }
 
-.menu-item,
+.menu-item-row,
 .left-group {
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
-.menu-item {
-    justify-content: space-between;
+.menu-item-row {
     padding: 30px 0;
     border-bottom: 1px solid #D2D2D2;
 }
@@ -80,4 +79,17 @@ header {
     color: #1f1f1f;
 }
 
+.remove-item-btn {
+    border: none;
+    background: none;
+    color: #bbb;
+    font-size: 0.75rem;
+    cursor: pointer;
+}
+
 /* UTILITY */
+.split-row {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+}
