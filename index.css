@@ -4,6 +4,11 @@ body {
     font-family: 'Smythe', sans-serif;
 }
 
+h3 {
+    font-size: 28px;
+    margin: 0;
+}
+
 #container {
     max-width: 600px;
     width: 100%;
@@ -19,7 +24,8 @@ header {
     padding: 0 20px;
 }
 
-#menu {
+#menu,
+#orders {
     margin-top: 40px;
 }
 
@@ -53,7 +59,6 @@ header {
 }
 
 .item-name {
-    font-size: 28px;
     letter-spacing: 1.4px;
 }
 
@@ -87,9 +92,49 @@ header {
     cursor: pointer;
 }
 
+/* ORDERS */
+
+#orders {
+    /* display: none; */
+}
+
+.complete-order-btn,
+.pay-btn {
+    color: #fff;
+    background-color: #16DB99;
+    border: none;
+    width: 100%;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.order-heading {
+    text-align: center;
+}
+
+#orders-list {
+    padding-bottom: 20px;
+    border-bottom: 2px solid #000;
+}
+
+.order-item-row {
+    padding: 10px 0;
+}
+
+.order-quantity {
+    color: #bbb;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: .75rem;
+}
+
+.order-total-row {
+    margin-bottom: 40px;
+}
+
 /* UTILITY */
 .split-row {
     display: flex;
     gap: 15px;
+    align-items: center;
     justify-content: space-between;
 }

@@ -19,23 +19,24 @@
             </section>
 
             <section id="orders">
-                <h3>Your order</h3>
+                <h3 class="order-heading">Your order</h3>
                 <ul id="orders-list">
-                    <li class="split-row">
-                        <div class="left-group">
-                            <h3 class="item-name">Pizza</h3>
-                            <button class="remove-item-btn">Remove</button>
-                        </div>
-                        <span class="item-price">£30</span>
-                    </li>
                     <li class="order-item-row split-row">
                         <div class="left-group">
                             <h3 class="item-name">Pizza</h3>
-                            <button class="remove-item-btn">Remove</button>
+                            <div>
+                                <span class="order-quantity">x3</span>
+                                <button class="remove-item-btn">Remove</button>
+                            </div>
                         </div>
-                        <span class="item-price">£30</span>
+                        <span class="item-price">£14</span>
                     </li>
                 </ul>
+                <div class="order-total-row split-row">
+                    <h3>Total price:</h3>
+                    <span>£33</span>
+                </div>
+                <button class="complete-order-btn">Complete Order</button>
             </section>
         </div>
     </div>
